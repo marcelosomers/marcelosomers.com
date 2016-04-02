@@ -1,0 +1,80 @@
+@import '../node_modules/basscss/css/basscss';
+@import '../node_modules/basscss-responsive-margin/css/responsive-margin';
+@import 'highlight';
+
+// Colors
+$black: #444;
+$accent: #c0392b;
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,sans-serif;
+  line-height: 1.6;
+  color: $black;
+  padding-bottom: 1rem;
+
+  * {
+    border-color: #d8dde6;
+  }
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+  transition: color 150ms ease-in-out;
+
+  &:hover {
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+header {
+  a {
+    color: $black;
+  }
+}
+
+article {
+  img {
+    max-width: 100%;
+  }
+
+  p,
+  ul,
+  ol { font-size: 1.125rem; }
+
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+
+    &~p {
+      margin-top: 0;
+    }
+  }
+
+  ul,
+  ol {
+    padding-left: 1rem;
+  }
+
+  blockquote,
+  blockquote p {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+  }
+}
+
+pre {
+  overflow-y: auto;
+  border-left: 3px solid #ddd;
+  padding: .25rem 0 .25rem 1rem;
+}
+
+code {
+  font-size: .825rem;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}

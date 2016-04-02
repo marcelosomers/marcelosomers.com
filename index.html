@@ -1,0 +1,47 @@
+---
+layout: home
+---
+
+<img src="img/hero.jpg" alt="Marcelo speaking at CSS Dev Conf 2015" class="fit" />
+
+<h1>Marcelo Somers</h1>
+
+<p>I believe computers empower people to do things they never could. Designing for simplicity and intuitiveness makes that power accessible to more people. I help clients design tools to solve real problems at <a href="http://slalom.com/">Slalom Consulting</a> in Dallas, TX. My technical emphasis is on Design Systems and CSS Architecture. I also lead our UI prototyping team that focuses on helping companies visualize their solutions in appropriate mediums.</p>
+
+<p>I am a regular <a href="/speaking/">speaker</a> on topics related to design and development. I co-created and maintain <a href="http://patternpack.org/">PatternPack</a>, an open source tool for designing, developing, and distributing design systems.</p>
+
+<div class="clearfix">
+  <div class="sm-col md-col-6">
+    <h2>Projects</h2>
+
+    <ul class="list-reset m0">
+      <li class="py1"><a href="http://patternpack.org/">PatternPack</a></li>
+    </ul>
+
+    <h2 class="mt3">Appearances</h2>
+
+    <ul class="list-reset m0">
+      <li class="py1">Responsive Web Design Summit 2016 - <a href="/speaking/2015-fight-the-zombie-pattern-library">Slides</a></li>
+      <li class="py1">Developer Tea - <a href="http://spec.fm/podcasts/developer-tea/23237">Part 1</a>, <a href="http://spec.fm/podcasts/developer-tea/23238">Part 2</a></li>
+      <li class="py1">Parent Programming - <a href="http://parentprogramming.libsyn.com/marcelo-somers">Episode 10</a></li>
+      <li class="py1">CSS Dev Conference 2015 - <a href="/speaking/2015-fight-the-zombie-pattern-library">Slides</a></li>
+      <li class="py1">Big Design 2015 - <a href="/speaking/2015-fight-the-zombie-pattern-library">Slides</a></li>
+      <li class="py1"><a href="speaking/">View All &rarr;</a></li>
+    </ul>
+  </div>
+
+  <div class="sm-col md-col-6">
+    <h2>Writing</h2>
+
+    <ul class="list-reset m0">
+      {% for post in site.posts limit:5 %}
+        <li class="py1">
+          <a href="{{ post.url }}" title="{{post.title}}">
+            {{ post.title }}
+          </a>
+        </li>
+      {% endfor %}
+      <li class="py1"><a href="writing/">View All &rarr;</a></li>
+    </ul>
+  </div>
+</div>

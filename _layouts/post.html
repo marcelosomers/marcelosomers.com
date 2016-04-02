@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include _head.html %}
+
+<body class="m0">
+  {% include _header.html %}
+
+  <article class="max-width-3 mx3 md-mx4">
+    <div class="h6 mt0 md-mt2 pt4 mb0">{{ page.date | date: "%B %-d, %Y" }}</div>
+    <h1 class="m0 h1">{{ page.title }}</h1> {% if page.subtitle %}
+    <h2 class="h2 mt0 regular">{{ page.subtitle}}</h2> {% endif %} {{ content }}
+  </article>
+</body>
+
+</html>
