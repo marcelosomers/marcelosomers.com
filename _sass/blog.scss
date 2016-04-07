@@ -1,5 +1,6 @@
 @import '../node_modules/basscss/css/basscss';
 @import '../node_modules/basscss-responsive-margin/css/responsive-margin';
+@import '../node_modules/basscss-responsive-padding/css/responsive-padding';
 @import 'highlight';
 
 // Colors
@@ -15,6 +16,11 @@ body {
   * {
     border-color: #d8dde6;
   }
+}
+
+p {
+  font-family: 'Georgia', serif;
+  font-size: 1.25rem;
 }
 
 a {
@@ -40,10 +46,18 @@ article {
 
   p,
   ul,
-  ol { font-size: 1.125rem; }
+  ol {
+    font-family: 'Georgia', serif;
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    line-height: 1.1;
+  }
 
   h3 {
-    margin-top: 2rem;
+    @extend .h2;
+    margin-top: 2.5rem;
     margin-bottom: .5rem;
     text-transform: uppercase;
 
@@ -54,7 +68,7 @@ article {
 
   ul,
   ol {
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 
   blockquote,
@@ -66,6 +80,10 @@ article {
     font-family: 'Georgia', serif;
     font-style: italic;
   }
+}
+
+.light {
+  font-weight: 100;
 }
 
 pre {

@@ -37,19 +37,19 @@ I've spoken with dozens of teams, and everyone has a different approach to achie
 
 If there's something I haven't considered that has worked for your team, leave a response on this post or [let me know on Twitter](http://twitter.com/marcelosomers)!
 
-# Copy and Paste
+### Copy and Paste
 This is how I've seen many style guides get started sharing code. As updates get made in a prototype or style guide documentation, the files are diff'ed and copied over to a production application.
 
 A slightly upgraded version of this is simply distributing your CSS as a ZIP file. The development team then downloads a newer version and puts those files into their project.
 
 **Why Not:** Do I even need to answer? This is both tedious and inconsistent. There's a good chance your codebases will diverge over time, since the development team has direct edit access to these files, and making changes directly is the path of least resistance.
 
-# Host your Pattern Library Inside Your Application
+### Host your Pattern Library Inside Your Application
 If you have a single application, you can build your documentation pages within the app and point them at the same UI code. This is a super easy way to handle your
 
 **Why Not:** This makes it nearly impossible for designers to iterate ahead of development. Where do they work without breaking existing code? My experience has also been that production apps are complex to run on your machine, and can often be unstable during development. Designers will not like dealing with this.
 
-# Git Submodules
+### Git Submodules
 [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) are a Git tool that allows you to nest another git repository within your project. It basically points to a specific commit and houses those files as a folder inside your project, and you can "pull" new code into your project. I think any developer using Git has seen the concept of Submodules and immediately thought "this will solve all my problems!" This is not reality.
 
 **Why Not:** Nearly every time I've seen someone think Git Submodules are the answer to something, it seems to get ripped out of the project after a few weeks. They're just a headache.
@@ -63,7 +63,7 @@ In Pattern Library work, I've encountered two major limiting factors (not includ
 6. -- this can lead to code being out of sync just within a single development team
 7. if someone forgot to run the command
 
-# CDN Hosted Files
+### CDN Hosted Files
 One idea some teams I've worked with have explored is deploying your UI code assets to a CDN, just like public libraries. You'd provide development teams with a versioned URL (e.g., [http://mycdn.com/1.3.5/styles.css)](http://mycdn.com/1.3.5/styles.css)) and upgrading is as simple as bumping the version number in the URL.
 
 This is actually a very viable solution in many situations. Accessing and upgrading the UI code is as simple as changing a version number.
@@ -72,7 +72,7 @@ The only roadblock I've hit with this is that it presumes development machines w
 
 However, this this is an option that would suggest to many teams that significantly decreases friction.
 
-# Public Registry Package Managers
+### Public Registry Package Managers
 So that leaves us with our option that comes closest to finding the holy grail: using a package manager like [npm](http://npmjs.com/). It's how other libraries like Bootstrap are published, so why not publish our own package?
 
 Package managers meet all of our needs: you can download your UI code from a separate codebase, track to a specific version (or even branches and commits), consuming apps can't edit the code, and new projects can easily access the code.
@@ -85,14 +85,14 @@ But the reality is that many companies will want to keep this private. So that t
 
 *Pro-Tip: If you're going to use a package manager like npm, make sure you include a command to update the local code every time the app gets built. That way if the version of your pattern library in your package.json gets bumped, all developers will get update locally when they rebuild the app. This will save many headaches of "why am I not seeing the latest changes!"*
 
-# Private Registry Package Managers
+### Private Registry Package Managers
 If you're willing to shell out some cash, npm will either [host a private package for you](https://www.npmjs.com/private-modules) ($7/month), or you can even [host your own registry](https://www.npmjs.com/onsite) ($20/user/month).
 
 A private package seems like a great idea until you dig in a bit. Every person who will be running npm install on your package now will require an npmjs.com account, and someone will need to grant them access. This might work on a small team, but this really doesn't scale well. It gets even worse once you consider that every build machine for your application would need access, [which isn't solved by the current implementation, but supposedly is on their roadmap](https://twitter.com/marcelosomers/status/664557574079942656).
 
 A private registry is probably out of the question due to cost. Kudos to npm for finding a way to monetize, but $20 per user per month is just insane to host our Pattern Library. Anything beyond a small team with a single app and we're talking thousands of dollars a year just to serve up our pattern library.
 
-# No Registry Package Managers
+### No Registry Package Managers
 One of the best tricks about npm dependencies is that [you can use a Git URL as a dependency](https://docs.npmjs.com/files/package.json#git-urls-as-dependencies). So instead of having a dependency on a publicly registered package like this:
 
 ```

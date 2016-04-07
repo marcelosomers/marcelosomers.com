@@ -7,6 +7,7 @@
     "basscss": "^8.0.1",
     "basscss-highlight": "^0.3.0",
     "basscss-responsive-margin": "^1.1.0",
+    "basscss-responsive-padding": "^1.1.0",
     "browser-sync": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "0.0.5",
