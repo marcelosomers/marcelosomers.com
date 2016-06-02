@@ -1,0 +1,91 @@
+.markdown {
+  font-size: 1.125rem;
+  font-family: $font-serif;
+
+  code {
+    background-color: color(gray-light);
+    padding: 2px 6px;
+  }
+
+  pre,
+  code {
+    font-family: Bitstream Vera Sans Mono,Source Code Pro,Andale Mono,Lucida Console,monospace;
+  }
+
+  pre {
+    padding-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow-x: scroll;
+    border-left: .25rem solid color(gray-light);
+
+    code {
+      background-color: transparent;
+    }
+  }
+
+  blockquote {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem 2rem 2rem 3rem;
+    background-color: color(gray-light);
+
+    &:before {
+      content: '“';
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-family: Georgia;
+      color: color(gray-med);
+      font-size: 3.5rem;
+      line-height: 1;
+    }
+
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  ul:not(.list-reset),
+  ol {
+    margin-left: 1rem;
+  }
+
+  h2 {
+    margin-top: 2.5rem;
+    font-family: $font-sans-serif;
+    font-size: 2rem;
+
+    &~h3 {
+      margin-top: 1rem;
+    }
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+    font-family: $font-sans-serif;
+    font-size: 1.5rem;
+
+    &~p {
+      margin-top: .5rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.talk-embed {
+  @media (min-width: 52em) {
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
+}

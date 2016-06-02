@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include _head.html %}
+  {% include _head.html %}
 
-<body class="m0">
-  {% include _header.html %}
+  <body class="sans-serif gray-dark">
+    {% include _header.html %}
 
-  <article class="max-width-3 mx-auto p2 sm-p3">
-    <div class="h6 mt0 md-mt2 pt4 mb0">{{ page.date | date: "%B %-d, %Y" }}</div>
-    <h1 class="m0 mt1 h1">{{ page.title }}</h1> {% if page.subtitle %}
-    <h2 class="h2 mt0 regular">{{ page.subtitle}}</h2> {% endif %} {{ content }}
-  </article>
-</body>
+    <div class="sans-serif bg-gray-light border-bottom border-gray-med article-title">
+      <div class="mx-auto max-width-3 p2">
+        <h1>{{ page.title }}</h1> {% if page.subtitle %}
+        <h2 class="regular">{{ page.subtitle}}</h2> {% endif %}
+      </div>
+    </div>
 
+    <article class="mx-auto max-width-3 p2 markdown">
+      {{ content }}
+    </article>
+  </body>
 </html>

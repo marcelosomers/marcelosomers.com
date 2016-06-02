@@ -1,0 +1,14 @@
+.site-title {
+  &:after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: -15px;
+    width: calc(100% + 30px);
+    height: 57px;
+    display: block;
+    content: "";
+    background-color: color(green);
+    transform: skew(-25deg);
+  }
+}

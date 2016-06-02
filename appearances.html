@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h2 class="mt2 h1 sans-serif">Appearances</h2>
+
+<div class="flex flex-wrap mxn1">
+  {% for post in site.talks reversed %}
+    <div class="md-col-6 px1">
+      <a href="{{ post.url }}" title="{{ post.title }}">
+        <img src="/img/{{ post.image }}" alt="{{ post.title }} Slide Cover" class="fit" />
+      </a>
+    </div>
+  {% endfor %}
+</div>

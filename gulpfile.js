@@ -56,7 +56,8 @@ gulp.task('serve', ['build'], function() {
 
   browserSync.init({
     server: './_site/',
-    open: false
+    open: false,
+    notify: false
   });
 
   // Watch site settings
@@ -67,6 +68,7 @@ gulp.task('serve', ['build'], function() {
 
   // Watch Jekyll posts
   gulp.watch('_posts/**/*.+(md|markdown|MD)', ['build:jekyll:watch']);
+  gulp.watch('_talks/**/*.+(md|markdown|MD)', ['build:jekyll:watch']);
 
   // Watch Jekyll drafts if --drafts flag was passed
   if (config.drafts) {

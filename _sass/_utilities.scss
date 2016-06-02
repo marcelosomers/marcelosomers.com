@@ -1,0 +1,46 @@
+@each $color, $value in $colors {
+  .#{$color} { color: $value !important; }
+  .bg-#{$color} { background-color: $value !important; }
+  .border-#{$color} { border-color: $value !important; }
+}
+
+.sans-serif { font-family: $font-sans-serif; }
+.serif { font-family: $font-serif; }
+.h6 { font-size: .75rem; }
+.no-hover-style {
+  &:hover {
+    box-shadow: none;
+  }
+}
+.uppercase { text-transform: uppercase; }
+
+.md-flex-row {
+  @media (min-width: 52em) {
+    flex-direction: row;
+  }
+}
+
+.md-order-2 {
+  @media (min-width: 52em) {
+    order: 2;
+  }
+}
+
+.myn2 {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+.md-mxn2 {
+  @media (min-width: 52em) {
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+  }
+}
+
+.md-px2 {
+  @media (min-width: 52em) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

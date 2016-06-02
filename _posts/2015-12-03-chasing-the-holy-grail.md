@@ -1,8 +1,8 @@
 ---
-title: Chasing The Holy Grail
+title: Chasing the Holy Grail
 subtitle: Strategies For Distributing Your Pattern Library and Keeping It in Sync
 layout: post
-excerpt: 'In our work with Pattern Libraries, we strive to achieve a level of maturity where the Pattern Library documentation is automatically in sync with the app(s) that it powers. Generally, this means sharing the CSS code so developers implementing patterns can just copy and paste snippets of HTML so it “just works.” In practice though, this gets complicated quickly.'
+excerpt: In our work with Pattern Libraries, we strive to achieve a level of maturity where the Pattern Library documentation is automatically in sync with the app(s) that it powers. Generally, this means sharing the CSS code so developers implementing patterns can just copy and paste snippets of HTML so it 'just works.' In practice though, this gets complicated quickly.
 ---
 
 ![The Holy Grail from Monty Python and the Holy Grail](/img/holy-grail.jpg)
@@ -95,17 +95,17 @@ A private registry is probably out of the question due to cost. Kudos to npm for
 ### No Registry Package Managers
 One of the best tricks about npm dependencies is that [you can use a Git URL as a dependency](https://docs.npmjs.com/files/package.json#git-urls-as-dependencies). So instead of having a dependency on a publicly registered package like this:
 
-```
-“dependencies”: {
- “bootstrap”: “^3.3.5”
+```js
+'dependencies': {
+ 'bootstrap': '^3.3.5'
 }
 ```
 
 You'd point to a git repository ([using any of the valid options](https://docs.npmjs.com/files/package.json#git-urls-as-dependencies)):
 
-```
-“dependencies”: {
- “my-pattern-library”: “git://github.com/user/project.git#commit-ish”
+```js
+'dependencies': {
+ 'my-pattern-library': 'git://github.com/user/project.git#commit-ish'
 }
 ```
 
@@ -125,9 +125,9 @@ So there's a few options we've come up with to deal with these situations:
 3. Create a read-only user that only has access to your UI Code repository. Then
 4. use an http/https URL in your package.json with the embedded credentials:
 
-```
-“dependencies”: {
- “my-pattern-library”: “http://user:password@github.com/user/project.git#commit-ish"
+```js
+'dependencies': {
+ 'my-pattern-library': 'http://user:password@github.com/user/project.git#commit-ish'
 }
 ```
 
