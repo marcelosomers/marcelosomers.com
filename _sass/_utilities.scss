@@ -7,6 +7,7 @@
 .sans-serif { font-family: $font-sans-serif; }
 .serif { font-family: $font-serif; }
 .h6 { font-size: .75rem; }
+.line-height-13 { line-height: 1.3; }
 .no-hover-style {
   &:hover {
     box-shadow: none;
@@ -14,9 +15,21 @@
 }
 .uppercase { text-transform: uppercase; }
 
+.sm-flex-row {
+  @media (min-width: 40em) {
+    flex-direction: row;
+  }
+}
+
 .md-flex-row {
   @media (min-width: 52em) {
     flex-direction: row;
+  }
+}
+
+.sm-flex-end {
+  @media (min-width: 40em) {
+    justify-content: flex-end;
   }
 }
 
@@ -31,6 +44,8 @@
   margin-bottom: -1rem;
 }
 
+.mtn2 { margin-top: -1rem; }
+
 .md-mxn2 {
   @media (min-width: 52em) {
     margin-left: -1rem !important;
@@ -44,3 +59,5 @@
     padding-right: 1rem;
   }
 }
+
+.overflow-x-auto { overflow-x: auto; }

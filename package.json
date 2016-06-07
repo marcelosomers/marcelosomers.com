@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "devDependencies": {
     "autoprefixer": "^6.3.5",
+    "basscss-responsive-margin": "^1.1.0",
+    "basscss-responsive-padding": "^1.1.0",
     "basscss-sass": "^4.0.0",
     "browser-sync": "latest",
     "gulp": "latest",

@@ -3,28 +3,30 @@ title: Fight the Zombie Pattern Library
 image: fight-the-zombie-pattern-library.jpg
 ---
 
-<div class="mt2 clearfix">
-  <div class="col col-8">
+<div class="flex flex-column md-flex-row mt2 talk-embed">
+  <div class="col-12 md-col-6 md-px2">
     <script async class="speakerdeck-embed" data-id="1f957e89563b440d96c16986507b790f" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
   </div>
-  <div class="col col-4 pl2">
-    <h2 class="mt0">Presented At</h2>
-
-    <ul class="list-reset">
-      <li class="border rounded p2">
-        Responsive Web Design Summit 2016<br />
-        <a href="https://speakerdeck.com/marcelosomers/fight-the-zombie-pattern-library-rwd-summit-2016">Slides</a></li>
-
-      <li class="mt1 border rounded p2">
-        CSS Dev Conf 2015<br />
-        <a href="https://speakerdeck.com/marcelosomers/fight-the-zombie-pattern-library-css-dev-conf-2015">Slides</a></li>
-
-      <li class="mt1 border rounded p2">
-        Big Design Conference 2015<br />
-        <a href="https://speakerdeck.com/marcelosomers/fight-the-zombie-pattern-library">Slides</a> | <a href="https://www.youtube.com/watch?v=6zOe_uyKF3A">Video</a>
-      </li>
-    </ul>
+  <div class="col-12 md-col-6 md-px2">
+    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/aar_RY0_Hr0' frameborder='0' allowfullscreen></iframe></div>
   </div>
+</div>
+<div>
+  <h2 class="mt0 sans-serif h2">Presented At</h2>
+  <ul class="list-reset flex flex-column md-flex-row md-mxn2">
+    <li class="md-col-4 md-px2 mb1 md-mb0">
+      Responsive Web Design Summit 2016<br />
+      <a href="https://speakerdeck.com/marcelosomers/fight-the-zombie-pattern-library-rwd-summit-2016">Slides</a></li>
+
+    <li class="md-col-4 md-px2 mb1 md-mb0">
+      CSS Dev Conf 2015<br />
+      <a href="https://speakerdeck.com/marcelosomers/fight-the-zombie-pattern-library-css-dev-conf-2015">Slides</a> | <a href="https://www.youtube.com/watch?v=aar_RY0_Hr0"> Video</a></li>
+
+    <li class="md-col-4 md-px2 mb1 md-mb0">
+      Big Design Conference 2015<br />
+      <a href="https://speakerdeck.com/marcelosomers/fight-the-zombie-pattern-library">Slides</a> | <a href="https://www.youtube.com/watch?v=6zOe_uyKF3A">Video</a>
+    </li>
+  </ul>
 </div>
 
 In "Fight the Zombie Pattern Library," we look at repeatable processes to implement Pattern Libraries in your product design and development workflow, so you can fight the slow rot of your interface design (and its underlying code) as your product grows and evolves.

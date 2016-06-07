@@ -4,8 +4,8 @@ layout: default
 
 {% for post in site.posts limit:1 %}
 <div class="mt2 h6 sans-serif gray-med">{{ post.date | date: "%B %-d, %Y" }}</div>
-<h2 class="h1 sans-serif">{{ post.title }}</h2>
-{{ post.excerpt }}
+<h2 class="h1 sans-serif line-height-13">{{ post.title }}</h2>
+<div class="serif">{{ post.excerpt }}</div>
 <a href="{{ post.url }}" title="{{ post.title }}">Read More &rarr;</a>
 {% endfor %}
 

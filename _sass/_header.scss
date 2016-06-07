@@ -1,14 +1,12 @@
-.site-title {
-  &:after {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: -15px;
-    width: calc(100% + 30px);
-    height: 57px;
-    display: block;
-    content: "";
-    background-color: color(green);
-    transform: skew(-25deg);
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+}
+
+.dropdown-trigger {
+  &:focus + .dropdown-menu {
+    display: flex;
+    opacity: 1;
+    top: 57px;
   }
 }

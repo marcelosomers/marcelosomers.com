@@ -4,11 +4,14 @@
 @import 'mixins';
 
 @import '../node_modules/basscss-sass/scss/basscss';
+@import '../node_modules/basscss-responsive-margin/css/responsive-margin';
+@import '../node_modules/basscss-responsive-padding/css/responsive-padding';
 
 @import 'utilities';
 
 @import 'base';
 
+@import 'caret';
 @import 'code';
 @import 'header';
 @import 'post';
