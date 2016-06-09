@@ -33,9 +33,9 @@ gulp.task('build:styles', function() {
 });
 
 gulp.task('build:jekyll', function() {
-  var shellCommand = 'jekyll build --config _config.yml,_development_config.yml';
+  var shellCommand = 'jekyll build --config _config.yml';
   if (config.drafts) {
-    shellCommand += ' --drafts';
+    shellCommand += ',_development_config.yml --drafts';
   };
 
   return gulp.src('./')
