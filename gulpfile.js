@@ -26,7 +26,7 @@ gulp.task('build:styles', function() {
         removeAll: true
       }
     }))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./css'))
     .pipe(gulp.dest('./_site/css'))
     .pipe(browserSync.stream());
