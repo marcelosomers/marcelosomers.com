@@ -1,6 +1,8 @@
 ---
 title: A Maturity Model for Design Systems
 layout: post
+excerpt: Moving up the maturity model takes time, but even going from one step to the next can yield huge returns for your product and design team. In the end, a mature design system accelerates design, prototyping, and development and decreases the time you spend fighting your code.
+image: design-system-maturity-model.png
 ---
 
 When I attended [CSS Dev Conference](http://2015.cssdevconf.com/) last month, I
@@ -12,7 +14,7 @@ question is, how do we go from where we are today to where we should be?
 A useful model for framing up this discussion is a design system maturity model
 that [John Gully](http://twitter.com/johngully) and I put together:
 
-![](https://cdn-images-1.medium.com/max/1600/1*F8M5o9rPr3kXt1T5-LbdXQ.jpeg)
+![The Design System Maturity Model](/img/design-system-maturity-model.png)
 
 ### Inconsistent
 

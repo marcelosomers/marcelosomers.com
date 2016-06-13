@@ -3,6 +3,7 @@ title: Chasing the Holy Grail
 subtitle: Strategies For Distributing Your Pattern Library and Keeping It in Sync
 layout: post
 excerpt: In our work with Pattern Libraries, we strive to achieve a level of maturity where the Pattern Library documentation is automatically in sync with the app(s) that it powers. Generally, this means sharing the CSS code so developers implementing patterns can just copy and paste snippets of HTML so it 'just works.' In practice though, this gets complicated quickly.
+image: holy-grail.jpg
 ---
 
 ![The Holy Grail from Monty Python and the Holy Grail](/img/holy-grail.jpg)

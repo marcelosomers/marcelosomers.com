@@ -1,6 +1,7 @@
 ---
 title: Rationalizing Functional CSS
 subtitle: Discovering and debating the merits of functional CSS
+excerpt: It's fun writing beautifully architected CSS components, but the fact is, I won't always be there, and in the monolith model, the team will never stop writing CSS. Functional CSS is the idea that instead of writing big, monolith components in my CSS, I write small, single property, immutable classes that can be assembled into a larger component in HTML.
 layout: post
 crosspost_to_medium: true
 ---
