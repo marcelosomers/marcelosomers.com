@@ -6,3 +6,4 @@ _site
 _drafts
 node_modules
 _development_config.yml
+.jekyll-cache
